@@ -3,19 +3,19 @@
     "1": {
       "text": "apple",
       "images": [
-        "CMTT_A_Order1_Page_02_A.jpg",
-        "CMTT_A_Order1_Page_02_B.jpg",
-        "CMTT_A_Order1_Page_02_C.jpg",
-        "CMTT_A_Order1_Page_02_D.jpg"
+        "apple.jpg",
+        "orange.jpg",
+        "dog.jpg",
+        "duck.jpg"
       ]
     },
     "2": {
       "text": "orange",
       "images": [
-        "CMTT_A_Order1_Page_04_A.jpg",
-        "CMTT_A_Order1_Page_04_B.jpg",
-        "CMTT_A_Order1_Page_04_C.jpg",
-        "CMTT_A_Order1_Page_04_D.jpg"
+        "orange.jpg",
+        "melon.jpg",
+        "cat.jpg",
+        "leaf.jpg"
       ]
     }
   }
