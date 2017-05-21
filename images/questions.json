@@ -1,22 +1,365 @@
 {
   "experiment 1": {
     "1": {
+      "text": "mango",
+      "images": [
+        "mango.jpg",
+        "carrot.jpg",
+        "horse.jpg",
+        "flower.jpg"
+      ]
+   },
+    "2": {
+      "text": "melon",
+      "images": [
+        "melon.jpg",
+        "grapes.jpg",
+        "car.jpg",
+        "rooster.jpg"
+      ]
+   },
+    "3": {
+      "text": "avocado",
+      "images": [
+        "avocado.jpg",
+        "peach.jpg",
+        "fish.jpg",
+        "animals.jpg"
+      ]
+   },
+    "4": {
+      "text": "banana",
+      "images": [
+        "banana.jpg",
+        "watermelon.jpg",
+        "purple.jpg",
+        "hen.jpg"
+      ]
+   },
+    "5": {
+      "text": "lemon",
+      "images": [
+        "lemon.jpg",
+        "mouse.jpg",
+        "peach.jpg",
+        "goat.jpg"
+      ]
+   },
+    "6": {
+      "text": "strawberry",
+      "images": [
+        "strawberry.jpg",
+        "bird.jpg",
+        "yellow.jpg",
+        "peach.jpg"
+      ]
+   },
+    "7": {
+      "text": "peach",
+      "images": [
+        "peach.jpg",
+        "animals.jpg",
+        "watermelon.jpg",
+        "sun.jpg"
+      ]
+   },
+    "8": {
       "text": "apple",
       "images": [
         "apple.jpg",
-        "orange.jpg",
+        "orange_f.jpg",
         "dog.jpg",
         "duck.jpg"
       ]
-    },
-    "2": {
-      "text": "orange",
+   },
+    "9": {
+      "text": "orange_f",
       "images": [
-        "orange.jpg",
+        "orange_f.jpg",
         "melon.jpg",
         "cat.jpg",
         "leaf.jpg"
       ]
+    },
+    "10": {
+      "text": "grapes",
+      "images": [
+        "grapes.jpg",
+        "flower.jpg",
+        "apple.jpg",
+        "carrot.jpg"
+      ]
+    },
+    "11": {
+      "text": "watermelon",
+      "images": [
+        "watermelon.jpg",
+        "banana.jpg",
+        "sun.jpg",
+        "blue.jpg"
+      ]
+    },
+    "12": {
+      "text": "goat",
+      "images": [
+        "goat.jpg",
+        "snake.jpg",
+        "cow.jpg",
+        "green.jpg"
+      ]
+    },
+    "13": {
+      "text": "donkey",
+      "images": [
+        "donkey.jpg",
+        "hen.jpg",
+        "mouse.jpg",
+        "ball.jpg"
+      ]
+    },
+    "14": {
+      "text": "rooster",
+      "images": [
+        "rooster.jpg",
+        "sheep.jpg",
+        "snake.jpg",
+        "purple.jpg"
+      ]
+    },
+    "15": {
+      "text": "sheep",
+      "images": [
+        "sheep.jpg",
+        "duck.jpg",
+        "red.jpg",
+        "bird.jpg"
+      ]
+    },
+    "16": {
+      "text": "fish",
+      "images": [
+        "fish.jpg",
+        "leaf.jpg",
+        "bird.jpg",
+        "melon.jpg"
+      ]
+    },
+    "17": {
+      "text": "dog",
+      "images": [
+        "dog.jpg",
+        "cat.jpg",
+        "hen.jpg",
+        "lemon.jpg"
+      ]
+    },
+    "18": {
+      "text": "cat",
+      "images": [
+        "cat.jpg",
+        "cow.jpg",
+        "strawberry.jpg",
+        "orange_c.jpg"
+      ]
+    },
+    "19": {
+      "text": "bird",
+      "images": [
+        "bird.jpg",
+        "donkey.jpg",
+        "grapes.jpg",
+        "goat.jpg"
+      ]
+    },
+    "20": {
+      "text": "snake",
+      "images": [
+        "snake.jpg",
+        "sun.jpg",
+        "duck.jpg",
+        "horse.jpg"
+      ]
+    },
+    "21": {
+      "text": "duck",
+      "images": [
+        "duck.jpg",
+        "mango.jpg",
+        "sheep.jpg",
+        "fish.jpg"
+      ]
+   },
+    "22": {
+      "text": "cow",
+      "images": [
+        "cow.jpg",
+        "purple.jpg",
+        "goat.jpg",
+        "snake.jpg"
+      ]
+   },
+    "23": {
+      "text": "mouse",
+      "images": [
+        "mouse.jpg",
+        "blue.jpg",
+        "donkey.jpg",
+        "rooster.jpg"
+      ]
+   },
+    "24": {
+      "text": "horse",
+      "images": [
+        "horse.jpg",
+        "dog.jpg",
+        "orange_c.jpg",
+        "sheep.jpg"
+      ]
+   },
+    "25": {
+      "text": "hen",
+      "images": [
+        "hen.jpg",
+        "fish.jpg",
+        "banana.jpg",
+        "watermelon.jpg"
+      ]
+   },
+    "26": {
+      "text": "animals",
+      "images": [
+        "animals.jpg",
+        "orange_c.jpg",
+        "avocado.jpg",
+        "car.jpg"
+      ]
+   },
+    "27": {
+      "text": "red",
+      "images": [
+        "red.jpg",
+        "big.jpg",
+        "blue.jpg",
+        "mango.jpg"
+      ]
+   },
+    "28": {
+      "text": "yellow",
+      "images": [
+        "yellow.jpg",
+        "red.jpg",
+        "little.jpg",
+        "strawberry.jpg"
+      ]
+   },
+    "29": {
+      "text": "blue",
+      "images": [
+        "blue.jpg",
+        "little.jpg",
+        "orange_c.jpg",
+        "cat.jpg"
+      ]
+    },
+    "30": {
+      "text": "green",
+      "images": [
+        "green.jpg",
+        "yellow.jpg",
+        "rooster.jpg",
+        "big.jpg"
+      ]
+    },
+   "31": {
+      "text": "ball",
+      "images": [
+        "ball.jpg",
+        "lemon.jpg",
+        "mango.jpg",
+        "mouse.jpg"
+      ]
+    },
+   "32": {
+      "text": "purple",
+      "images": [
+        "purple.jpg",
+        "apple.jpg",
+        "big.jpg",
+        "red.jpg"
+      ]
+    },
+   "33": {
+      "text": "flower",
+      "images": [
+        "flower.jpg",
+        "horse.jpg",
+        "melon.jpg",
+        "avocado.jpg"
+      ]
+    },
+   "34": {
+      "text": "orange_c",
+      "images": [
+        "ornage_c.jpg",
+        "car.jpg",
+        "green.jpg",
+        "little.jpg"
+      ]
+    },
+   "35": {
+      "text": "carrot",
+      "images": [
+        "carrot.jpg",
+        "ball.jpg",
+        "leaf.jpg",
+        "yellow.jpg"
+      ]
+    },
+   "36": {
+      "text": "car",
+      "images": [
+        "car.jpg",
+        "banana.jpg",
+        "carrot.jpg",
+        "orange_f.jpg"
+      ]
+    },
+   "37": {
+      "text": "sun",
+      "images": [
+        "sun.jpg",
+        "grapes.jpg",
+        "animals.jpg",
+        "cow.jpg"
+      ]
+    },
+   "38": {
+      "text": "leaf",
+      "images": [
+        "leaf.jpg",
+        "avocado.jpg",
+        "flower.jpg",
+        "donkey.jpg"
+      ]
+    },
+   "39": {
+      "text": "big",
+      "images": [
+        "big.jpg",
+        "strawberry.jpg",
+        "ball.jpg",
+        "dog.jpg"
+      ]
+    },
+   "40": {
+      "text": "little",
+      "images": [
+        "little.jpg",
+        "green.jpg",
+        "lemon.jpg",
+        "apple.jpg"
+      ]
     }
   }
 }
+
