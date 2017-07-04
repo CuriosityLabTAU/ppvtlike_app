@@ -8,6 +8,8 @@ from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy_communication import *
 from text_handling.text_handling import *
 
+import random
+
 
 class ZeroScreen(Screen):
     pass
@@ -28,25 +30,29 @@ class QuestionScreen(Screen):
         self.update_question()
 
     def on_enter(self, *args):
+        KL.log.insert(action=LogAction.data, obj='screen_question+' + str(self.current_question), comment='enter_screen')
         if self.the_text:
             TTS.speak([self.the_text])
 
     def update_question(self, current_question=None):
-        self.ids['A_button'].background_normal = 'images/' + str(self.the_images[0])
-        self.ids['B_button'].background_normal = 'images/' + str(self.the_images[1])
-        self.ids['C_button'].background_normal = 'images/' + str(self.the_images[2])
-        self.ids['D_button'].background_normal = 'images/' + str(self.the_images[3])
+        image_sequence = [0, 1, 2, 3]
+        random.shuffle(image_sequence)
 
-        self.ids['A_button'].background_disabled_down = 'images/' + str(self.the_images[1])
-        self.ids['B_button'].background_disabled_down = 'images/' + str(self.the_images[2])
-        self.ids['C_button'].background_disabled_down = 'images/' + str(self.the_images[3])
-        self.ids['D_button'].background_disabled_down = 'images/' + str(self.the_images[0])
+        self.ids['A_button'].background_normal = 'images/' + str(self.the_images[image_sequence[0]])
+        self.ids['B_button'].background_normal = 'images/' + str(self.the_images[image_sequence[1]])
+        self.ids['C_button'].background_normal = 'images/' + str(self.the_images[image_sequence[2]])
+        self.ids['D_button'].background_normal = 'images/' + str(self.the_images[image_sequence[3]])
+
+        self.ids['A_button'].background_disabled_down = 'images/' + str(self.the_images[image_sequence[1]])
+        self.ids['B_button'].background_disabled_down = 'images/' + str(self.the_images[image_sequence[2]])
+        self.ids['C_button'].background_disabled_down = 'images/' + str(self.the_images[image_sequence[3]])
+        self.ids['D_button'].background_disabled_down = 'images/' + str(self.the_images[image_sequence[0]])
 
         # because log goes after this, the name is changed to (real number - 1)
-        self.ids['A_button'].name = str(self.current_question) + '_A'
-        self.ids['B_button'].name = str(self.current_question) + '_B'
-        self.ids['C_button'].name = str(self.current_question) + '_C'
-        self.ids['D_button'].name = str(self.current_question) + '_D'
+        self.ids['A_button'].name = str(self.current_question) + '_A_' + self.the_images[image_sequence[0]][:-4] + '_' + str(image_sequence[0])
+        self.ids['B_button'].name = str(self.current_question) + '_B_' + self.the_images[image_sequence[1]][:-4] + '_' + str(image_sequence[1])
+        self.ids['C_button'].name = str(self.current_question) + '_C_' + self.the_images[image_sequence[2]][:-4] + '_' + str(image_sequence[2])
+        self.ids['D_button'].name = str(self.current_question) + '_D_' + self.the_images[image_sequence[3]][:-4] + '_' + str(image_sequence[3])
 
     def pressed(self, answer):
         print(answer)
@@ -84,9 +90,11 @@ class PpvtLikeApp(App):
                     self.questions[-1].next_question = i_question + 1
                 else:
                     self.questions[-1].next_question = -1
-                self.sm.add_widget(self.questions[-1])
                 i_question += 1
 
+        random.shuffle(self.questions)
+        for q_screen in self.questions:
+            self.sm.add_widget(q_screen)
 
         self.end_screen = EndScreen(name='end_screen')
         self.sm.add_widget(self.end_screen)
