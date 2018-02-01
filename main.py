@@ -80,22 +80,21 @@ class PpvtLikeApp(App):
 
         self.questions = []
 
-        i_question = 0
         for exp_name, questions in self.q_dict.items():
             questions_id = questions.keys()
             random.shuffle(questions_id)
             self.first_question[exp_name] = questions_id[0]
-            for q_number, q_data in questions.items():
-                self.questions.append(QuestionScreen(name='question_screen_' + questions_id[i_question]))
+            for i_question, q_number in enumerate(questions_id):
+                q_data = questions[q_number]
+                self.questions.append(QuestionScreen(name='question_screen_' + q_number))
                 self.questions[-1].exp_name = exp_name
                 self.questions[-1].the_text = q_data['text']
                 self.questions[-1].the_images = q_data['images']
-                self.questions[-1].current_question = questions_id[i_question]
-                if i_question < len(questions) - 1:
+                self.questions[-1].current_question = q_number
+                if i_question < len(questions_id) - 1:
                     self.questions[-1].next_question = questions_id[i_question+1]
                 else:
                     self.questions[-1].next_question = -1
-                i_question += 1
 
         random.shuffle(self.questions)
         for q_screen in self.questions:
