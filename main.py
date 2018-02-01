@@ -57,7 +57,7 @@ class QuestionScreen(Screen):
     def pressed(self, answer):
         print(answer)
         if self.next_question > 0:
-            next_screen = 'question_screen_' + str(self.next_question).zfill(2)
+            next_screen = 'question_screen_' + self.next_question
             self.manager.current = next_screen
         else:
             self.manager.current = 'end_screen'
@@ -65,6 +65,7 @@ class QuestionScreen(Screen):
 
 class PpvtLikeApp(App):
     q_dict = {}
+    first_question = {}
 
     def build(self):
         self.load_questions()
@@ -78,16 +79,20 @@ class PpvtLikeApp(App):
         self.sm.add_widget(self.zero_screen)
 
         self.questions = []
+
         i_question = 0
         for exp_name, questions in self.q_dict.items():
+            questions_id = questions.keys()
+            random.shuffle(questions_id)
+            self.first_question[exp_name] = questions_id[0]
             for q_number, q_data in questions.items():
-                self.questions.append(QuestionScreen(name='question_screen_' + str(i_question).zfill(2)))
+                self.questions.append(QuestionScreen(name='question_screen_' + questions_id[i_question]))
                 self.questions[-1].exp_name = exp_name
                 self.questions[-1].the_text = q_data['text']
                 self.questions[-1].the_images = q_data['images']
-                self.questions[-1].current_question = int(q_number)
-                if self.questions[-1].current_question < len(questions):
-                    self.questions[-1].next_question = i_question + 1
+                self.questions[-1].current_question = questions_id[i_question]
+                if i_question < len(questions) - 1:
+                    self.questions[-1].next_question = questions_id[i_question+1]
                 else:
                     self.questions[-1].next_question = -1
                 i_question += 1
@@ -113,8 +118,8 @@ class PpvtLikeApp(App):
     def on_connection(self):
         KL.log.insert(action=LogAction.data, obj='SpatialSkillAssessmentApp', comment='start')
 
-    def press_start(self, current_question):
-        self.sm.current = 'question_screen_' + str(current_question).zfill(2)
+    def press_start(self, which_exp='experiment 1'):
+        self.sm.current = 'question_screen_' + self.first_question[which_exp]
 
     def end_game(self):
         self.stop()

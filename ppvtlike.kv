@@ -23,7 +23,7 @@
             font_size: 16
             size: root.width * 0.15, root.height * 0.08
             pos: root.width * 0.65 - self.width * 0.5, root.height * 0.75 - self.height * 0.5
-            on_press: app.press_start(0)
+            on_press: app.press_start()
 
         LoggedButton:
             id: start_button_post
@@ -34,7 +34,7 @@
             font_size: 16
             size: root.width * 0.175, root.height * 0.08
             pos: root.width * 0.85 - self.width * 0.5, root.height * 0.75 - self.height * 0.5
-            on_press: app.press_start(2)
+            on_press: app.press_start()
 
         Label:
             text: "Subject ID:"
