@@ -117,5 +117,125 @@
         "tomato.jpg"
       ]
     }
+  },
+  "experiment_2": {
+    "1": {
+      "text": "lemon",
+      "images": [
+        "lemon.jpg",
+        "orange.jpg",
+        "rooster.jpg",
+        "cat.jpg"
+      ]
+   },
+    "2": {
+      "text": "fish",
+      "images": [
+        "fish.jpg",
+        "sheep.jpg",
+        "cow.jpg",
+        "cucumber.jpg"
+      ]
+   },
+    "3": {
+      "text": "duck",
+      "images": [
+        "duck.jpg",
+        "donkey.jpg",
+        "goat.jpg",
+        "tomato.jpg"
+      ]
+   },
+    "4": {
+      "text": "strawberry",
+      "images": [
+        "strawberry.jpg",
+        "tomato.jpg",
+        "sheep.jpg",
+        "cow.jpg"
+      ]
+   },
+    "5": {
+      "text": "goat",
+      "images": [
+        "goat.jpg",
+        "donkey.jpg",
+        "cat.jpg",
+        "orange.jpg"
+      ]
+   },
+    "6": {
+      "text": "cow",
+      "images": [
+        "cow.jpg",
+        "duck.jpg",
+        "strawberry.jpg",
+        "rooster.jpg"
+      ]
+   },
+   "7": {
+      "text": "orange",
+      "images": [
+        "orange.jpg",
+        "lemon.jpg",
+        "rooster.jpg",
+        "donkey.jpg"
+      ]
+   },
+   "8": {
+      "text": "rooster",
+      "images": [
+        "rooster.jpg",
+        "fish.jpg",
+        "duck.jpg",
+        "tomato.jpg"
+      ]
+    },
+    "9": {
+      "text": "cat",
+      "images": [
+        "cat.jpg",
+        "cow.jpg",
+        "goat.jpg",
+        "cucumber.jpg"
+      ]
+    },
+   "10": {
+      "text": "cucumber",
+      "images": [
+        "cucumber.jpg",
+        "lemon.jpg",
+        "goat.jpg",
+        "donkey.jpg"
+      ]
+    },
+   "11": {
+      "text": "sheep",
+      "images": [
+        "sheep.jpg",
+        "donkey.jpg",
+        "cow.jpg",
+        "orange.jpg"
+      ]
+    },
+   "12": {
+      "text": "tomato",
+      "images": [
+        "tomato.jpg",
+        "strawberry.jpg",
+        "rooster.jpg",
+        "cow.jpg"
+      ]
+    },
+   "13": {
+      "text": "donkey",
+      "images": [
+        "donkey.jpg",
+        "sheep.jpg",
+        "cow.jpg",
+        "tomato.jpg"
+      ]
+    }
   }
 }
+
